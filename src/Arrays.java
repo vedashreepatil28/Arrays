@@ -1,6 +1,7 @@
 public class Arrays {
 
     public int[] nums;
+    public Astronaut[] astro;
 
     public static void main(String[] args) {
         System.out.println("Welcome to awesome arrays!");
@@ -10,6 +11,8 @@ public class Arrays {
     public Arrays(){
 
         nums = new int[10];
+        astro = new Astronaut[7];
+
         nums[0] = 30;
         nums[1] = 19;
         nums[2] = 18;
@@ -30,6 +33,14 @@ public class Arrays {
         averageNum();
         maxNum();
         minNum();
+
+        Astronaut a1 = new Astronaut();
+        a1.printInfo();
+
+        astro[4] = new Astronaut();
+        astro[4].eyes = 2;
+        astro[4].name = "jasmin";
+       astro[4].printInfo();
     }
 
     public void displayArray(){
@@ -70,12 +81,12 @@ public class Arrays {
 
     public void minNum(){
         int smallest = nums[0]; // Assume the first element is the largest initially
-        for (int i = 1; i < nums.length; i++) {
+        for (int i = 0; i < nums.length; i++) {
             if (nums[i] < smallest) {
                 smallest = nums[i]; // Update largest if current element is greater
             }
         }
-        System.out.println("min:" + smallest);
+        System.out.println("min: " + smallest);
     }
 
 }

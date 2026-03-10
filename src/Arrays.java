@@ -34,8 +34,10 @@ public class Arrays {
         maxNum();
         minNum();
 
+
         Astronaut a1 = new Astronaut();
         a1.printInfo();
+
 
         astro[0] = new Astronaut();
         astro[0].eyes = 2;
@@ -72,6 +74,13 @@ public class Arrays {
         astro[6].name = "sophia";
         astro[6].printInfo();
 
+        for (int x=0; x < astro.length; x++){
+            astro[x].eyes = (int)(Math.random()*31);
+            System.out.println(astro[x].eyes);
+        }
+
+        displayAstro();
+        totalEyes();
 
     }
 
@@ -119,6 +128,23 @@ public class Arrays {
             }
         }
         System.out.println("min: " + smallest);
+    }
+
+    public void displayAstro(){
+        for(int x=0; x<astro.length; x++){
+            astro[x].printInfo();
+        }
+        System.out.println(" ");
+
+    }
+
+    public void totalEyes(){
+        int Eyes = 0;
+        for (int x = 0; x < astro.length; x++) {
+            //System.out.println(nums[x]);
+            Eyes = Eyes + astro[x].eyes;
+        }
+        System.out.println(Eyes);
     }
 
 }

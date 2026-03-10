@@ -37,10 +37,42 @@ public class Arrays {
         Astronaut a1 = new Astronaut();
         a1.printInfo();
 
+        astro[0] = new Astronaut();
+        astro[0].eyes = 2;
+        astro[0].name = "jasmin";
+        astro[0].printInfo();
+
+        astro[1] = new Astronaut();
+        astro[1].eyes = 8;
+        astro[1].name = "Merida";
+        astro[1].printInfo();
+
+        astro[2] = new Astronaut();
+        astro[2].eyes = 1;
+        astro[2].name = "Aurora";
+        astro[2].printInfo();
+
+        astro[3] = new Astronaut();
+        astro[3].eyes = 4;
+        astro[3].name = "Rupanzel";
+        astro[3].printInfo();
+
         astro[4] = new Astronaut();
-        astro[4].eyes = 2;
-        astro[4].name = "jasmin";
+        astro[4].eyes = 3;
+        astro[4].name = "bell";
        astro[4].printInfo();
+
+        astro[5] = new Astronaut();
+        astro[5].eyes = 9;
+        astro[5].name = "cinderella";
+        astro[5].printInfo();
+
+        astro[6] = new Astronaut();
+        astro[6].eyes = 2;
+        astro[6].name = "sophia";
+        astro[6].printInfo();
+
+
     }
 
     public void displayArray(){
